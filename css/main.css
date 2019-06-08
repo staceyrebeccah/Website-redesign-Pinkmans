@@ -1,0 +1,191 @@
+
+/* general styling */
+
+body {
+	font-family: 'Nunito', sans-serif;
+	color: black !important;
+	background-color: white !important;
+
+}
+
+p a {
+	color: #E66086;
+}
+
+a:hover {
+	color: #E66086 !important;
+}
+
+/* backgrounds and logo */
+
+.background-image-1 {
+	width:100%;
+    background-image: url("https://www.dropbox.com/s/jsij2lglux9syir/background-image-1a.png?raw=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 450px;
+}
+
+#logo {
+	display: flex;
+	margin: 0 auto;
+	padding-top: 9rem; 
+}
+
+.background-image-3 {
+	width:100%;
+    background-image: url("https://www.dropbox.com/s/3ft8ldqqjtahif9/background-image-3.png?raw=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 450px;
+
+}
+
+
+/* navigation */
+
+
+nav {
+	height: 4.5rem;
+}
+
+nav a {
+	color: white !important;
+	font-family: 'Nunito', sans-serif;
+}
+
+ul li {
+	float: right;
+	list-style: none;
+	background-color: #343a40;
+}
+
+li a:hover {
+	color: #E66086 !important;
+}
+
+.navbar-collapse #navbarNav {
+  background-color: gray;
+}
+
+
+/* food menus accordion */
+
+.wrapper {
+	padding: 45px;
+}
+
+.card-header {
+	background-color: #343a40 !important; 
+}
+
+.card-body {
+	margin: 20px;
+}
+
+#menu-accordion button {
+	color: white !important;
+}
+
+#menu-accordion a {
+	color: #E66086 !important;
+}
+
+.wrapper h3, .collapse h3 {
+	color: #E66086;
+}
+
+/* gallery */
+
+.gallery img {
+	width: 25%;
+	height: 25%;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+            filter: grayscale(0%);
+}
+
+.instagram-gallery {
+	background-color: #E66086;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.instagram-gallery img:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+/* opening hours, reservations and find us */
+
+.find-us {
+	display: grid;
+	width: 100%;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	padding: 40px;
+}
+
+	.col1 {
+		width: 100%;
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+    	padding: 20px;
+	}
+
+	.col2 {
+		width: 100%;
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+    	padding: 20px;
+}
+
+.fa-map-marker-alt, .fa-clock, .fa-calendar-alt {
+	color: #E9539D;
+}
+
+.map {
+	width: 100%;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+/* footer */
+
+
+footer {
+  font-size: 14px;
+  color: #959494;
+  text-align: center;
+}
+
+
+/* optimise for smaller screens (mobiles and tablets) */
+
+@media only screen and (max-width: 768px) {
+  .text-muted {
+    display: none;
+  }
+
+  .find-us {
+  	display: inherit;
+  }
+}
